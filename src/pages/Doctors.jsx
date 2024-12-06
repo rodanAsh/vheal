@@ -8,6 +8,7 @@ const Doctors = () => {
   const {doctors} = useContext(AppContext)
   const navigate = useNavigate()
 
+  {/* function to render doctors by speciality */}
   const applyFilter = () => {
     if(speciality){
       setFilteredDoc(doctors.filter(doc => doc.speciality === speciality))
